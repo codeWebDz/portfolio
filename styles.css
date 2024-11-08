@@ -919,7 +919,10 @@ hr{
     .contact .contact-left .btn button{
         left: 30%;
     }
-
+    
+     .container{
+        background-color: #dc7208c0;
+       }
     
 }
 @media (max-width :480px){
@@ -988,16 +991,16 @@ hr{
     background-color: #243cda93;
     }
   
-  
-    
-}
-
-@media (max-width :480px){
     .contact {
         height: 90vh;
         margin: -26px auto;
      }
+     .container{
+        background-color: #22830cc0;
+       }
+    
 }
+
 
 @media(max-width : 348px){
   
@@ -1008,6 +1011,6 @@ hr{
     
     }
    .container{
-    background-color: #c7727279;
+    background-color: #b4080879;
    }
 }
