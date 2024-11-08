@@ -989,25 +989,19 @@ hr{
     background-color: #243cda93;
     }
   
-    .contact { overflow: visib;
+    .contact { overflow: visible;
         height: 90vh;
         margin: -26px auto;
+        position: relative;
      }
-     .container{
-        background-color: #830c83c0;
-       }
     
 }
 
-
-@media(max-width : 348px){
+@media(max-width : 349px){
   
-    
     .contact .contact-right img {
         top: -1050%;
         left: 20%;
-    
     }
 
-    
 }
