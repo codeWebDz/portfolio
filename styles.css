@@ -1005,6 +1005,9 @@ hr{
     .contact .contact-right img {
         top: -100%;
         left: 20%;
+    
     }
-   
+   .container{
+    background-color: #c7727279;
+   }
 }
