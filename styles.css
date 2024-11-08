@@ -319,6 +319,7 @@ ul .socialbar .box , .footer .box {
     background: #0b0b0be7;
     min-height: 10vh;
     width: 80%;
+
     
 }
 .navPortfolio{
@@ -440,7 +441,8 @@ ul .socialbar .box , .footer .box {
 }
 .skills .row2 .contenu {
     font-size: 15px;
-    height: 40px;
+    height: 100%;
+    background: #941b1b;
 }
 
 .skills .skil-box{
@@ -870,7 +872,18 @@ hr{
     
 }
 @media (max-width :560px){
-   
+   .container{
+    width: 100%;
+    left: 0;
+
+   }
+   .navPortfolio h2{
+    left: 1%;
+    
+   }
+   .navPortfolio img{
+    left:94%;
+   }
     .portfolio{
         min-height: 320vh;
        }
