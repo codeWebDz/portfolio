@@ -999,14 +999,12 @@ hr{
      }
 }
 
-@media(max-width : 386px){
+@media(max-width : 348px){
   
-     
+    
     .contact .contact-right img {
-        top: -1390%;
+        top: -1000%;
         left: 20%;
     }
-    .container{
-        background-color: #f5f5d44e;
-    }
+   
 }
