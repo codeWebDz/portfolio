@@ -920,9 +920,7 @@ hr{
         left: 30%;
     }
     
-     .container{
-        background-color: #dc7208c0;
-       }
+     
     
 }
 @media (max-width :480px){
@@ -996,7 +994,7 @@ hr{
         margin: -26px auto;
      }
      .container{
-        background-color: #22830cc0;
+        background-color: #830c83c0;
        }
     
 }
@@ -1010,7 +1008,6 @@ hr{
         left: 20%;
     
     }
-   .container{
-    background-color: #b4080879;
-   }
+
+    
 }
