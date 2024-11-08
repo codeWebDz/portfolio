@@ -545,19 +545,30 @@ ul .socialbar .box , .footer .box {
     height: 30px;
     transition: 5s ease-in;
     position: relative;
+    text-align: center;
+
 }
-.mininav .nav1::before,.mininav .nav2::before, .mininav .nav3::before{
+.mininav .nav1,.mininav .nav2,.mininav .nav3,.mininav .nav4{
+    position: relative;
+    width: 40%;
+    overflow: hidden;
+    text-align: center;
+}
+.mininav .nav1::before,.mininav .nav2::before, .mininav .nav3::before , .mininav .nav4::before{
         content: '';
         position: absolute;
-        top: 15%;
-        width: 120%;
+        top: 10%;
+        left:0;
+        width: 99%;
         height: 15px;
-        border-right: 1px solid;
-        
+       
 }
-
+.mininav .nav1::before,.mininav .nav2::before, .mininav .nav3::before {
+    border-right: 1px solid #cacacaf6;
+}
 .mininav a{
-    text-align: center;
+    color: #cacaca;
+    font-weight:600;
     text-transform: capitalize;
     position: relative;
     cursor: pointer;
@@ -977,7 +988,9 @@ hr{
         font-size: 13px;
     }
 
-    
+    .contact{
+        overflow: hidden;
+    }
      .contact .contact-right img {
         top:-1599%;
         left: 38%;
