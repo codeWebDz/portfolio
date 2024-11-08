@@ -995,7 +995,7 @@ hr{
         position: relative;
      }
      .contact .contact-right img {
-        top: -100%;
+        top: -300%;
         left: 20%;
     }
 }
