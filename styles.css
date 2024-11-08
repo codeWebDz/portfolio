@@ -994,7 +994,10 @@ hr{
         margin: -26px auto;
         position: relative;
      }
-    
+     .contact .contact-right img {
+        top: 50%;
+        left: 20%;
+    }
 }
 
 @media(max-width : 349px){
