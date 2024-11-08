@@ -996,7 +996,9 @@ hr{
      }
      .contact .contact-right img {
         top: -430%;
-        left: 20%;
+        left: 20%;  
+        background-color: #32a9cd;
+
     }
 }
 
