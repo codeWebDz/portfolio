@@ -338,8 +338,12 @@ ul .socialbar .box , .footer .box {
 .navPortfolio h2 {
     left:12%;
 }
+.navPortfolio img#menu-toggle{
+    height: 20px;
+
+}
  .navPortfolio img#menu-toggle ,.navPortfolio img#close{
-     
+      
      right: 10%;
 }
 .navPortfolio .menubarPortfolio img{
@@ -349,9 +353,8 @@ ul .socialbar .box , .footer .box {
      display: bloc;
     }
 .menubarPortfolio{
-     
     border-radius: 10px;
-    min-height: 50vh;
+    min-height: 60vh;
     right: 10%;
     left: 10%;
     width: 80%;
@@ -442,6 +445,7 @@ ul .socialbar .box , .footer .box {
 .skills .row2 .contenu {
     font-size: 15px;
     height: 100%;
+   
 }
 
 .skills .skil-box{
@@ -881,7 +885,12 @@ hr{
     
    }
    .navPortfolio img{
-    left:94%;
+    left:92%;
+   }
+   .menubarPortfolio{
+    top: 1%;
+    left: 0%;
+    width: 100%;
    }
     .portfolio{
         min-height: 320vh;
@@ -924,18 +933,24 @@ hr{
      }
     .skills{
         height: 80vh;
+        position: relative;
     }
     .skills .row1, .skills .row2 .contenu {
+        position: absolute;
         height: auto;
         flex-direction: column;
         row-gap: 40px;
     }
+   
     .skills .row2 .contenu {
       position: absolute;
-      top: 35%;
-      left: 30%;
+      top: 0;
       row-gap: 98px;
+      top: 38%;
+      left: 40%;
     }
+
+      
     .portfolio{
         min-height: 490vh;
     }
