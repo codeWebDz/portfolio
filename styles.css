@@ -989,7 +989,7 @@ hr{
     background-color: #243cda93;
     }
   
-    .contact { overflow: visible;
+    .contact { 
         height: 90vh;
         margin: -26px auto;
         position: relative;
