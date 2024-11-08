@@ -544,8 +544,20 @@ ul .socialbar .box , .footer .box {
     justify-content: space-evenly;
     height: 30px;
     transition: 5s ease-in;
+    position: relative;
 }
+.mininav .nav1::before,.mininav .nav2::before, .mininav .nav3::before{
+        content: '';
+        position: absolute;
+        top: 15%;
+        width: 120%;
+        height: 15px;
+        border-right: 1px solid;
+        
+}
+
 .mininav a{
+    text-align: center;
     text-transform: capitalize;
     position: relative;
     cursor: pointer;
@@ -558,15 +570,13 @@ ul .socialbar .box , .footer .box {
     display: flex;
     justify-content: space-evenly;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    transform: translatex(-50%);
     border-radius:0%;
     background: radial-gradient( #0228fc, transparent 100%) ;
     transition: all 0.4s ease-in;
 }
-.mininav a::after{
-    left: 50%;
-    transform: translatex(-50%);
-}
+
 .mininav a:hover::after{
     width: 100%;
 }
@@ -969,7 +979,7 @@ hr{
 
     
      .contact .contact-right img {
-        margin-top: -500px;
+        top:-1599%;
         left: 38%;
     
     }
