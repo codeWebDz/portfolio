@@ -919,12 +919,7 @@ hr{
     .contact .contact-left .btn button{
         left: 30%;
     }
-    .contact-right img {
-        top: -25%;
-        left:-45%;
-        background: #9c1010;
-    
-    }
+
     
 }
 @media (max-width :480px){
@@ -987,28 +982,28 @@ hr{
     .mininav a{
         font-size: 13px;
     }
-
-    .contact{
-        overflow:visible;
-    }
-     .contact .contact-right img {
+    .contact .contact-right img {
         top:-20%;
         left: -20%;
-    
+    background-color: #243cda93;
     }
+  
+  
     
 }
 
-@media (max-width :434px){
+@media (max-width :480px){
     .contact {
-       height: 90vh;
-       margin: -26px auto;
-    }
-    .contact .contact-right img{
-        bottom :100%;
-        right: -30%;
-
-    }
-    
+        height: 90vh;
+        margin: -26px auto;
+     }
 }
 
+@media(max-width : 386px){
+  
+     
+    .contact .contact-right img {
+        top: -1390%;
+        left: 20%;
+    }
+}
