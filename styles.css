@@ -967,10 +967,11 @@ hr{
         font-size: 13px;
     }
 
-    .contact .contact-right img{
-        margin-top: 50px;
-        right: 30%;
-        position:relative;
+    
+     .contact .contact-right img {
+        margin-top: -450px;
+        left: 38%;
+    
     }
     
 }
