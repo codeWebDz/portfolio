@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Namane Meriem</title>
+</head>
+<body>
+    <section class="reflect">
+        <video autoplay loop muted play-inline class="bgindex">
+            <source  src="./images/skyBg.mp4" type="video/mp4">
+        </video>
+        <section class="glass ">
+            
+            <span></span>
+            <div class="navbar">
+                <a href="index.html"><h2 class="name">Namane Meriem</h2></a>
+                <img id="menu-toggle"  src="./images/icons8-menu-67.png"  alt="menu icon">
+                <div class="menubar">
+                    <ul class="menu">
+                        <li><img id="close" style="width:16px;" src="./images/icons8-effacer-64.png"  alt="close icon"></li>
+                        <li class="list"><a href="portfolio.html#about">About</a></li>
+                        <li class="list"><a href="portfolio.html">Portfolio</a></li>
+                    
+                        <div class="social socialbar">
+                            <div class="box"><a href="https://www.facebook.com/profile.php?id=61557945598936"><img src="./images/facebook.png"  alt="icon-facebook"> </a></div>
+                            <div class="box"><a href="https://www.linkedin.com/in/namane-meriem-b111962b4/"><img src="./images/linkedin.png" alt="icon-linkedin"></a></div>
+                            <div class="box"><a href="https://github.com/codeWebDz"><img src="./images/github (1).png"  alt="icon-github"></a></div>
+                        </div> 
+                    </ul>
+                </div>
+            
+            </div>        
+                
+
+            <div class="header">
+               <div  data-aos="flip-left"><img src="./images/image_fx___8_-removebg-preview.png"  alt=""></div> 
+                <h2> Ingénieure en Informatique </h2>
+                <h4>& Experte en Développement Web et Création Visuelle</h4>
+            </div>
+            <div class="btn">
+                <button><a download href="NamaneMeriem-cv .pdf">Download cv</a> </button>
+                <button><a href="portfolio.html">Portfolio</a></button>
+            </div>
+            <div  data-aos="fade-left">
+                <div class="social">
+                    <div class="box"> <a href="https://www.facebook.com/profile.php?id=61557945598936"><img src="./images/facebook.png"  alt="icon-facebook"> </a></div>
+                    <div class="box"><a href="https://www.linkedin.com/in/namane-meriem-b111962b4/"><img src="./images/linkedin.png" alt="icon-linkedin"></a></div>
+                    <div class="box"><a href="https://github.com/codeWebDz"><img src="./images/github (1).png"  alt="icon-github"></a></div>
+                </div>   
+            </div>
+            <div class=" circle " > </div>
+            
+        </section>
+    </section>
+</body>
+<script>
+    /* script of menu toggle*/
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuClose = document.getElementById("close");
+    const menubar = document.getElementsByClassName("menubar")[0];
+
+    // Ouverture du menu
+    menuToggle.addEventListener("click", function() {
+        menubar.classList.add("active"); // Affiche le menu
+        menuToggle.style.display = "none"; // Cache le bouton Menu
+        menuClose.style.display = "inline-block"; // Affiche le bouton Close
+    });
+
+    // Fermeture du menu
+    menuClose.addEventListener("click", function() {
+        menubar.classList.remove("active"); // Cache le menu
+        menuToggle.style.display = "inline-block"; // Affiche le bouton Menu
+        menuClose.style.display = "none"; // Cache le bouton Close
+      
+    });
+ 
+    
+</script>
+
+   <!-- scrolling animation script -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+         AOS.init();
+   </script>
+
+</html>
