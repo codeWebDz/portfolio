@@ -989,7 +989,7 @@ hr{
     }
 
     .contact{
-        overflow: hidden;
+        overflow:visible;
     }
      .contact .contact-right img {
         top:-1599%;
