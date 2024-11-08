@@ -991,7 +991,7 @@ hr{
     background-color: #243cda93;
     }
   
-    .contact {
+    .contact { overflow: visib;
         height: 90vh;
         margin: -26px auto;
      }
@@ -1006,7 +1006,7 @@ hr{
   
     
     .contact .contact-right img {
-        top: -600%;
+        top: -1050%;
         left: 20%;
     
     }
