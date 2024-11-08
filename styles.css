@@ -876,8 +876,8 @@ hr{
 }
 @media (max-width :560px){
    .container{
-    width: 100%;
-    left: 0;
+    width: 90%;
+    left: 5%;
 
    }
    .navPortfolio h2{
@@ -897,6 +897,12 @@ hr{
        }
     .contact .contact-left .btn button{
         left: 30%;
+    }
+    .contact-right img {
+        top: -25%;
+        left:-45%;
+        background: #9c1010;
+    
     }
     
 }
@@ -946,8 +952,8 @@ hr{
       position: absolute;
       top: 0;
       row-gap: 98px;
-      top: 38%;
-      left: 40%;
+      top: 40%;
+      left: 38%;
     }
 
       
@@ -962,7 +968,6 @@ hr{
     }
 
     .contact .contact-right img{
-         
         margin-top: 50px;
         right: 30%;
         position:relative;
@@ -976,7 +981,6 @@ hr{
        margin: -26px auto;
     }
     .contact .contact-right img{
-         
         bottom :100%;
         right: -30%;
 
