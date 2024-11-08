@@ -993,20 +993,31 @@ hr{
         height: 90vh;
         margin: -26px auto;
         position: relative;
+     
      }
-     .contact .contact-right img {
+     .container{
+        background-color: #fcc202;
+     }
+   
+}
+@media (min-width: 348px) and (max-width: 400px) {
+    .contact .contact-right img {
         top: -430%;
         left: 20%;  
         background-color: #32a9cd;
 
     }
+    .container{
+        background-color: #409028;
+     }
 }
-
 @media(max-width : 349px){
   
     .contact .contact-right img {
         top: -1050%;
         left: 20%;
     }
-
+    .container{
+        background-color: #8a1983;
+     }
 }
