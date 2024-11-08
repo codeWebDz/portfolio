@@ -589,7 +589,7 @@ ul .socialbar .box , .footer .box {
 }
 
 .mininav a:hover::after{
-    width: 100%;
+    width: 70%;
 }
 .mininav a.nav2::after{
     background: radial-gradient( #02fc28, transparent 100%) ;
@@ -977,7 +977,7 @@ hr{
       left: 38%;
     }
 
-      
+    
     .portfolio{
         min-height: 490vh;
     }
