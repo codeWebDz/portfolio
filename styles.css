@@ -879,7 +879,6 @@ hr{
             width:420px;
             height: 420px;   
             right:15%;
-             background-color: #243cda93;
         }
         
 }
@@ -986,7 +985,6 @@ hr{
     .contact .contact-right img {
         top:-20%;
         left: -20%;
-    background-color: #243cda93;
     }
   
     .contact { 
@@ -995,19 +993,15 @@ hr{
         position: relative;
      
      }
-     .container{
-        background-color: #fcc202;
-     }
+     
    
 }
 @media  (max-width: 400px) {
     .contact .contact-right img {
         top: -430%;
         left: 20%;  
-        background-color: #32a9cd;
 
     }
-    .container{
-        background-color: #cf1fb7;
-     }
+   
+    
 }
