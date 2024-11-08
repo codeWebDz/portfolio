@@ -1000,7 +1000,7 @@ hr{
      }
    
 }
-@media (min-width: 350px) and (max-width: 400px) {
+@media  (max-width: 400px) {
     .contact .contact-right img {
         top: -430%;
         left: 20%;  
@@ -1008,16 +1008,6 @@ hr{
 
     }
     .container{
-        background-color: #090a09;
-     }
-}
-@media(max-width : 349px){
-  
-    .contact .contact-right img {
-        top: -1050%;
-        left: 20%;
-    }
-    .container{
-        background-color: #8a1983;
+        background-color: #cf1fb7;
      }
 }
