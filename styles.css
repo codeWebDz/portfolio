@@ -1016,7 +1016,7 @@ hr{
 }
 @media  (max-width: 450px) {
     .portfolio{
-        min-height: 490vh;
+        min-height: 350vh;
     }
     .contact .contact-right img {
         top: -430%;
