@@ -147,7 +147,7 @@ span{
     overflow: hidden;
     
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     text-transform: capitalize;
 }
 button a{
@@ -787,9 +787,14 @@ hr{
     color:#cacaca ; 
 }
 
-
+@media (min-width : 1280px){
+    .header{
+        width: 150%;
+        height: 50%;
+    }
+}
 @media (min-width : 780px){
-    
+   
   
     .header h2{
         font-size: 15px;
@@ -841,9 +846,10 @@ hr{
         left: 80%;
         border-radius: 150px;
      }
-   .hero h2 , .navbar h2{
+   .hero h2 ,.navbar h2{
         font-size: 30px;
     }
+    
     .hero p{
         font-size: 22px;
     }
@@ -866,9 +872,8 @@ hr{
         height: 35px;
     }
 }
+
 @media (max-width : 1200px){
-    
-    
     
        .gallery{
             columns: 3;
