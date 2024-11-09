@@ -973,7 +973,7 @@ hr{
       left: 38%;
     }
     .portfolio{
-        min-height: 550vh; background: #a11b1b;
+        min-height: 500vh; background: #a11b1b;
     }
     .gallery{
         columns: 1;
