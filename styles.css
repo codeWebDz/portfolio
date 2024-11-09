@@ -132,6 +132,7 @@ span{
     position: inherit;
     margin-top: 50px;
     font-size:  0.75em;
+    font-weight: 500;
 }
 .btn button {
     position: relative;
