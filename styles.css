@@ -973,7 +973,7 @@ hr{
       left: 38%;
     }
     .portfolio{
-        min-height: 500vh; background: #a11b1b;
+        min-height: 550vh; 
     }
     .gallery{
         columns: 1;
@@ -997,7 +997,7 @@ hr{
 }
 @media  (max-width: 400px) {
     .portfolio{
-        min-height: 400vh;
+        min-height: 380vh;background: #1ba170;
     }
     .contact .contact-right img {
         top: -430%;
