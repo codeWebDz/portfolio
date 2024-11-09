@@ -536,9 +536,8 @@ ul .socialbar .box , .footer .box {
 
 /**** portfolio > mini navbar****/
 
-.portfolio{
-    min-height: 290vh;
-}
+
+
 .mininav{
     padding-top: 60px;
     display: flex;
@@ -667,24 +666,7 @@ ul .socialbar .box , .footer .box {
     height: 30px;
 }
 
-/**** portfolio > miniProject***
 
-.miniproject{
-    background: #55ed031f;
-}
-
-/**** portfolio >website ***
-
-.website{
-    background: #fd03952f;
-    
-}
-/**** portfolio > design ***
-
-.design{
-    background: #ddfa0223;
-}
-*/
 
 /*************** contact form ***************/
 .contact{
@@ -793,6 +775,9 @@ hr{
         width: 150%;
         height: 50%;
     }
+    .portfolio{
+        min-height: 100vh;
+       }
 }
 @media (min-width : 780px){
    
