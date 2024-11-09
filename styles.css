@@ -583,7 +583,6 @@ ul .socialbar .box , .footer .box {
     bottom: 0;
     left: 50%;
     transform: translatex(-50%);
-    border-radius:0%;
     background: radial-gradient( #0228fc, transparent 100%) ;
     transition: all 0.4s ease-in;
 }
@@ -606,7 +605,7 @@ ul .socialbar .box , .footer .box {
 
 /* Lorsque l'élément a la classe active */
 .mininav a.active::after {
-    width: 100%;
+    width: 70%;
 }
 /**** portfolio > tab-gallery ****/
 .tab-gallery{
