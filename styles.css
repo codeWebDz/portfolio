@@ -900,6 +900,19 @@ hr{
     
 }
 @media (max-width :560px){
+    .download::after{
+        position: absolute;
+        z-index: -1;
+        content: '';
+        width: 120px;
+        height: 58px;
+        background: #8a2f76c5;
+        display: flex;
+        top:-50%;
+        left: -10%;
+       
+    }
+    
    .container{
     width: 90%;
     left: 5%;
