@@ -117,10 +117,14 @@ input[type="checkbox"]:checked~ .dark{
 
 }
 .switchers:has(input[type="checkbox"]:checked)~ .reflect .glass .btn button a 
-,.switchers:has(input[type="checkbox"]:checked)~ .reflect .container .btn button a{    
+,.switchers:has(input[type="checkbox"]:checked)~ .reflect .container .btn button a
+,.switchers:has(input[type="checkbox"]:checked)~ .reflect .container .contact .btn button  {    
     filter: inherit;    
     color: #141717;
 
+}
+.switchers:has(input[type="checkbox"]:checked)~ .reflect .container .contact .btn button img  {    
+    filter: invert(1);
 }
 /*light / dark mode for portfolio */
 .switchers:has(input[type="checkbox"]:checked)~ .reflect .container{
@@ -1012,6 +1016,18 @@ hr{
         width: 35px;
         height: 35px;
     }
+    
+    select,.light,.dark{
+        width: 60px;
+        height: 60px;
+    }
+    .btnswitch{
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        
+    }
+
 }
 
 @media (max-width : 1200px){
@@ -1136,7 +1152,28 @@ hr{
         position: relative;
      
      }
-     
+     .switchers, .langue{
+        transform: rotate(0deg);  
+    }
+    .switchers{
+        width: 100%;
+        top:3%;
+        left: 0;
+    }
+    label{
+        transform: rotate(90deg);
+     }
+    .langueportfolio {
+        transform: rotate(-90deg);  
+    }
+    .switchportfolio{
+        transform: rotate(90deg);
+        width: 50px;
+        right:85%;
+        top: 50%;
+        position: fixed;
+        z-index: 200;
+    }
    
 }
 @media  (max-width: 400px) {
