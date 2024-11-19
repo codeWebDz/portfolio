@@ -124,11 +124,12 @@ input[type="checkbox"]:checked~ .dark{
 }
 /*light / dark mode for portfolio */
 .switchers:has(input[type="checkbox"]:checked)~ .reflect .container{
-    background: #646363e7;
+    background: #c7c6c6e7;
 
 }
-.switchers:has(input[type="checkbox"]:checked)~ .reflect .container{
-    background: #64636384;
+
+.switchers:has(input[type="checkbox"]:checked)~ .reflect .container .mininav a{
+    color: #0e0e0e;
 
 }
 .switchers:has(input[type="checkbox"]:checked)~ .reflect .container .navPortfolio{
