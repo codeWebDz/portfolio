@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--icone google ------------>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--css link-->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="avatar.ico" width="400" type="image/svg+xml">
@@ -10,13 +13,26 @@
     <title>Namane Meriem</title>
 </head>
 <body>
+    <section class="switchers">
+        <div class="btnswitch">
+            <select class="langue">
+                <option >fr <img src="./images/icones/france.png" alt=""></option>
+             
+            </select>
+            <label class="mode"> 
+                <input type="checkbox">
+                <span class="material-symbols-outlined light"> light_mode </span>    
+                <span class="material-symbols-outlined dark"> dark_mode </span>      
+            </label>
+        </div>
+    </section>
     <section class="reflect">
         <video autoplay loop muted play-inline class="bgindex">
             <source  src="./images/skyBg.mp4" type="video/mp4">
         </video>
         <section class="glass ">
             
-            <span></span>
+            <span class="bgglass"></span>
             <div class="navbar">
                 <a href="index.html"><h2 class="name">Namane Meriem</h2></a>
                 <img id="menu-toggle"  src="./images/icons8-menu-67.png"  alt="menu icon">
@@ -38,7 +54,7 @@
                 
 
             <div class="header">
-               <div ><img src="./images/image_fx___8_-removebg-preview.png"  alt=""></div> 
+               <div class="avatar"><img  src="./images/image_fx___8_-removebg-preview.png"  alt=""></div> 
                 <h2> Ingénieure en Informatique </h2>
                 <h4>& Experte en Développement Web et Création Visuelle</h4>
             </div>

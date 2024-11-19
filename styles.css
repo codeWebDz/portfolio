@@ -6,6 +6,7 @@
     scroll-behavior: smooth;  
 }
 body{
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,6 +23,143 @@ a{
     font-family: "Poppins", sans-serif;
     color: #d7d1d1;
 }
+/********* section switchers **********************/
+.switchers{
+    
+    height: 28px;
+    position: absolute;
+    z-index: 1;
+    right:1%;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    transform: rotate(90deg);
+}
+.switchportfolio{
+    right:85%;
+    top: 50%;
+    position: fixed;
+    z-index: 200;
+}
+.btnswitch{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    
+}
+label{
+
+   border-radius: 50px;
+   display: flex;
+   justify-content:center ;
+   align-items: center;
+   margin-bottom: 10px;
+   cursor: pointer;
+
+}
+input[type="checkbox"]{
+   opacity: 0;
+}
+.light{
+   
+   position: relative; 
+   overflow: hidden;
+}
+
+.dark{
+    opacity:0;
+}
+.light,.dark{
+    font-variation-settings: 'wght' 250;
+    border-radius: 50px;
+    color: #e2dfdf;
+    background-color: #91909065;
+    transition: 0.8s ease; 
+     width:45px; 
+    height: 45px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-90deg) ;
+}
+
+input[type="checkbox"]:checked~ .light{
+    opacity: 0;
+    transform:  rotate(360deg) ;
+
+}
+input[type="checkbox"]:checked~ .dark{
+    opacity:1;
+    transform: rotate(265deg)  ;
+    background-color: #000000a4;
+    color: #e1e1e1;
+}
+.switchers:has(input[type="checkbox"]:checked) .langue {
+    color: #380138;
+
+
+}
+
+
+.switchers:has(input[type="checkbox"]:checked)~ .reflect video
+,.switchers:has(input[type="checkbox"]:checked)~ .reflect .glass {
+   filter:invert(1);
+}
+
+.switchers:has(input[type="checkbox"]:checked)~ .reflect .glass .header  {   
+     filter: inherit;
+    color: #282e2e;
+}
+.switchers:has(input[type="checkbox"]:checked)~ .reflect .glass .btn {    
+    filter: inherit;    
+    color: #282e2e;
+
+}
+.switchers:has(input[type="checkbox"]:checked)~ .reflect .glass .btn button a 
+,.switchers:has(input[type="checkbox"]:checked)~ .reflect .container .btn button a{    
+    filter: inherit;    
+    color: #141717;
+
+}
+/*light / dark mode for portfolio */
+.switchers:has(input[type="checkbox"]:checked)~ .reflect .container{
+    background: #646363e7;
+
+}
+.switchers:has(input[type="checkbox"]:checked)~ .reflect .container{
+    background: #64636384;
+
+}
+.switchers:has(input[type="checkbox"]:checked)~ .reflect .container .navPortfolio{
+    filter: invert(1);
+
+}
+select{
+    width: 45px;
+    height: 45px;
+    background: #b85cb8be;
+    color: #e2dfdf;
+    border:none;
+    border-radius: 50px;
+    appearance: none;
+    outline: none;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    margin-top: -13px;
+    
+}
+option{
+    background-color: #d6101000; /* Option background */
+    color: #333; /* Text color */
+    border:none;
+    outline: none;
+   
+
+}
 
 /*********  page d'acceuil | index page  *************/
 .reflect{
@@ -33,7 +171,7 @@ a{
     justify-content: center;
     background: transparent;
       /*miroir effect*/
-      -webkit-box-reflect: below 3px linear-gradient(transparent 91%,rgb(13, 13, 13)) ;
+      -webkit-box-reflect: below 1px linear-gradient(transparent 91%,rgb(13, 13, 13)) ;
 
 }
 .bgindex{
@@ -82,6 +220,8 @@ a{
     height: 250%;
     background: conic-gradient(transparent, transparent,transparent ,rgb(253, 1, 236));
     animation: rotation 5s infinite linear;
+    filter: inherit;
+
 }
 .glass::after{
     position: absolute;
@@ -92,8 +232,9 @@ a{
     background: conic-gradient(transparent, transparent,transparent ,rgb(253, 1, 236));
     animation: rotation 5s infinite linear;
     animation-delay: 2.5s;
+    filter: inherit;
 }
-span{
+.bgglass{
     position: absolute;
     background-image: url(./images/bgweb.png);
     background-size: cover;
@@ -112,9 +253,8 @@ span{
     border-radius: 50%;
     margin: 20px;
     transform: scale(1.6);
-   opacity: 0.9;
+    opacity: 0.9;
    /*filter: drop-shadow(0px 0px 50px rgba(253, 1, 236, 0.437));*/
-
 }
 .header{
     display: flex;
@@ -128,7 +268,7 @@ span{
     margin-top:127px;
     font-size: 0.8em;
 }
-.header h4{
+.header h4{ 
     position: inherit;
     margin-top: 50px;
     font-size:  0.75em;
@@ -139,7 +279,7 @@ span{
     z-index: 2;
     background: transparent;
     border-radius: 7px;
-    color: #d8d6d7;
+    color: #d8d6d7;  
     border: 0.9px solid #646464;
     height: 28px;
     width: 100px;
@@ -153,7 +293,7 @@ span{
 }
 button a{
     text-decoration: none;
-    color: inherit;
+
 }
 button:is(:hover)::after{
     position: absolute;
@@ -168,6 +308,7 @@ button:is(:hover)::after{
    animation: translate1 0.5s infinite ease-in-out;
    animation-fill-mode: forwards;
    animation-iteration-count: 1; 
+   filter: inherit;
 }
 button:is(:hover)::before{
     position: absolute;
@@ -183,6 +324,19 @@ button:is(:hover)::before{
    animation-fill-mode: forwards;
    animation-iteration-count: 1; 
    animation-delay: 0.3s;
+   filter: inherit;
+}
+.download::after{
+    position: absolute;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 58px;
+    background: #8a2f76c5;
+    display: flex;
+    top:-50%;
+    
+   
 }
 @keyframes translate1 {
     from{
@@ -314,7 +468,7 @@ ul .socialbar .box , .footer .box {
 
 .container{
     position: absolute;
-    top: 0;
+    top: -13%;
     right: 10%;
     left: 10%;
     background: #0b0b0be7;
@@ -324,12 +478,12 @@ ul .socialbar .box , .footer .box {
     
 }
 .navPortfolio{
-    background: #030303b7;
+    background: #030303c5;
     box-shadow: 0 0 20px #69676748;
     width: 100%;
     height: 10vh;
     position: fixed;
-    top: 0;
+    top: 0%;
     left: 0;
     z-index: 20;
 }
@@ -885,18 +1039,7 @@ hr{
     
 }
 @media (max-width :560px){
-    .download::after{
-        position: absolute;
-        z-index: -1;
-        content: '';
-        width: 120px;
-        height: 58px;
-        background: #8a2f76c5;
-        display: flex;
-        top:-50%;
-        left: -10%;
-       
-    }
+    
     
    .container{
     width: 90%;
@@ -973,7 +1116,7 @@ hr{
       left: 38%;
     }
     .portfolio{
-        min-height: 550vh; 
+        min-height: 590vh; 
     }
     .gallery{
         columns: 1;
@@ -998,12 +1141,16 @@ hr{
 @media  (max-width: 400px) {
     
     .social{
-        margin-top: 120px; 
-
+        /*
+        margin-top: 120px;
+        */ 
 
     }
     .portfolio{
-        min-height: 330vh;
+        min-height: 360vh;
+    }
+    .contact {
+        margin-top: 600px;
     }
     .contact .contact-right img {
         top: -430%;
