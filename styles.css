@@ -133,15 +133,31 @@ input[type="checkbox"]:checked~ .dark{
     background: #c7c6c6e7;
 
 }
+.switchers:has(input[type="checkbox"]:checked)~ .reflect .container .hero{
+    background: #8d8b8be7;
+    color: #141717;
+
+}
 
 .switchers:has(input[type="checkbox"]:checked)~ .reflect .container .mininav a{
     color: #0e0e0e;
+
+}
+.switchers:has(input[type="checkbox"]:checked)~ .reflect .container .mininav .nav1::before
+,.switchers:has(input[type="checkbox"]:checked)~ .reflect .container .mininav .nav2::before
+,.switchers:has(input[type="checkbox"]:checked)~ .reflect .container .mininav .nav3::before{
+
+
+    border-right: 1px solid  #0e0e0e;
 
 }
 .switchers:has(input[type="checkbox"]:checked)~ .reflect .container .navPortfolio{
     filter: invert(1);
 
 }
+/*.mininav .nav1::before,.mininav .nav2::before, .mininav .nav3::before {
+    border-right: 1px solid #cacacaf6;
+}*/
 select{
     width: 45px;
     height: 45px;
