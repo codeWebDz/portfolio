@@ -1149,9 +1149,7 @@ hr{
     .portfolio{
         min-height: 360vh;
     }
-    .contact {
-        margin-top: 600px;
-    }
+    
     .contact .contact-right img {
         top: -430%;
         left: 20%;  
