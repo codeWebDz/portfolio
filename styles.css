@@ -1019,14 +1019,13 @@ hr{
         height: 35px;
     }
     
-    select,.light,.dark{
+    select,label{
         width: 60px;
         height: 60px;
     }
     .btnswitch{
         display: flex;
         align-items: center;
-        column-gap: 30px;
         
     }
 
