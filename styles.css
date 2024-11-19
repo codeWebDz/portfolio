@@ -25,7 +25,6 @@ a{
 }
 /********* section switchers **********************/
 .switchers{
-    
     height: 28px;
     position: absolute;
     z-index: 1;
@@ -44,7 +43,7 @@ a{
 .btnswitch{
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
+    column-gap: 10px;
     
 }
 label{
@@ -53,8 +52,11 @@ label{
    display: flex;
    justify-content:center ;
    align-items: center;
-   margin-bottom: 10px;
+   margin-top: -14px;
    cursor: pointer;
+   background-color: #91909065;
+   width:45px; 
+   height: 45px;
 
 }
 input[type="checkbox"]{
@@ -69,14 +71,12 @@ input[type="checkbox"]{
 .dark{
     opacity:0;
 }
-.light,.dark{
+ .light, .dark{
     font-variation-settings: 'wght' 250;
     border-radius: 50px;
-    color: #e2dfdf;
-    background-color: #91909065;
     transition: 0.8s ease; 
-     width:45px; 
-    height: 45px;
+    width:24px; 
+    height: 24px;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -89,11 +89,13 @@ input[type="checkbox"]:checked~ .light{
     transform:  rotate(360deg) ;
 
 }
+.switchers:has(input[type="checkbox"]:checked) label {
+    background-color: #000000a4;
+
+}
 input[type="checkbox"]:checked~ .dark{
     opacity:1;
     transform: rotate(265deg)  ;
-    background-color: #000000a4;
-    color: #e1e1e1;
 }
 .switchers:has(input[type="checkbox"]:checked) .langue {
     color: #380138;
