@@ -1163,6 +1163,9 @@ hr{
     label{
         transform: rotate(90deg);
      }
+    .labelportfolio{
+        transform: rotate(0deg);
+    }
     .langueportfolio {
         transform: rotate(-90deg);  
     }
