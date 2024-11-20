@@ -1088,7 +1088,7 @@ hr{
   
     .switchportfolio{
         transform: rotate(90deg);
-        left:-105%;
+        left:-107%;
         top: 50%;
         position: fixed;
         
@@ -1228,17 +1228,18 @@ hr{
         position: relative;
      
      }
-     .switchers
+   /*  .switchers
      .switchportfolio{
         left:-108%;
     }
+    */
     .switchers, .langue{
         transform: rotate(0deg);  
     }
     .switchers{
         width: 100%;
         top:5%;
-        left: 0;
+        left:-12%
     }
     label{
         transform: rotate(90deg);
