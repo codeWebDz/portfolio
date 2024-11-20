@@ -98,7 +98,7 @@ input[type="checkbox"]:checked~ .dark{
     opacity:1;
     transform: rotate(265deg)  ;
 }
-.switchers:has(input[type="checkbox"]:checked) .switchportfolio .btnswitch{
+.switchportfolio:has(input[type="checkbox"]:checked) .btnswitch{
     background: #e2e3e286;
 }
 
@@ -1094,7 +1094,7 @@ hr{
         
     }
     .switchportfolio .btnswitch{
-        background: #cbcacac3;
+        background: #202020c3;
         border-radius: 10px;
         width: 120px;
         height: 80px;
