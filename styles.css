@@ -98,9 +98,10 @@ input[type="checkbox"]:checked~ .dark{
     opacity:1;
     transform: rotate(265deg)  ;
 }
-.switchers:has(input[type="checkbox"]:checked) .btnswitch{
+.switchers:has(input[type="checkbox"]:checked) .switchportfolio .btnswitch{
     background: #e2e3e286;
 }
+
 .switchers:has(input[type="checkbox"]:checked) .btnswitch .langue .language-btn {
     color: #260328a4;
 
@@ -1088,13 +1089,12 @@ hr{
     .switchportfolio{
         transform: rotate(90deg);
         left:-105%;
-        
         top: 50%;
         position: fixed;
         
     }
-    .btnswitch{
-        background: #1d1d1dc3;
+    .switchportfolio .btnswitch{
+        background: #cbcacac3;
         border-radius: 10px;
         width: 120px;
         height: 80px;
@@ -1228,11 +1228,36 @@ hr{
         position: relative;
      
      }
-  
+     .switchers
      .switchportfolio{
         left:-108%;
     }
-    
+    .switchers, .langue{
+        transform: rotate(0deg);  
+    }
+    .switchers{
+        width: 100%;
+        top:5%;
+        left: 0;
+    }
+    label{
+        transform: rotate(90deg);
+     }
+    .labelportfolio{
+        transform: rotate(0deg);
+    }
+    .langueportfolio {
+        transform: rotate(-90deg);  
+    }
+    .switchportfolio{
+        transform: rotate(90deg);
+        width: 50px;
+        right:85%;
+        top: 50%;
+        position: fixed;
+        z-index: 200;
+    }
+   
    
 }
 @media  (max-width: 400px) {
