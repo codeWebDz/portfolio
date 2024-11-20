@@ -13,10 +13,10 @@
 <body>
     <section class="switchers">
         <div class="btnswitch">
-            <select class="langue">
-                <option >fr <img src="./images/icones/france.png" alt=""></option>
-             
-            </select>
+            <div class="langue">
+                <span class="language-btn fr active" onclick="changeLanguage('en')">fr</span>
+                <span class="language-btn eng hidden" onclick="changeLanguage('fr')">en</span>
+            </div>
             <label class="mode"> 
                 <input type="checkbox">
                 <img src="./images/icones/light-mode.png"  class="light" alt="">
@@ -37,8 +37,8 @@
                 <div class="menubar">
                     <ul class="menu">
                         <li><img id="close" style="width:16px;" src="./images/icons8-effacer-64.png"  alt="close icon"></li>
-                        <li class="list"><a href="portfolio.html#about">About</a></li>
-                        <li class="list"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="list" id="nav1"><a href="portfolio.html#about">A propos</a></li>
+                        <li class="list" id="nav2"><a href="portfolio.html">Portfolio</a></li>
                     
                         <div class="social socialbar">
                             <div class="box"><a href="https://www.facebook.com/profile.php?id=61557945598936"><img src="./images/facebook.png"  alt="icon-facebook"> </a></div>
@@ -53,11 +53,11 @@
 
             <div class="header">
                <div class="avatar"><img  src="./images/image_fx___8_-removebg-preview.png"  alt=""></div> 
-                <h2> Ingénieure en Informatique </h2>
-                <h4>& Experte en Développement Web et Création Visuelle</h4>
+                <h2 id="header1"> Ingénieure en Informatique </h2>
+                <h4 id="header2">& Experte en Développement Web et Création Visuelle</h4>
             </div>
             <div class="btn">
-                <button class="download"><a download href="NamaneMeriem-cv .pdf">Download cv</a> </button>
+                <button class="download" id="btndownloader"><a download href="NamaneMeriem-cv .pdf">Télécharger CV</a> </button>
                 <button><a href="portfolio.html">Portfolio</a></button>
             </div>
             <div  data-aos="fade-left">
@@ -130,7 +130,124 @@ modeSwitch.addEventListener('change', () => {
 });
 
 
+/*************** script for languege switchers *************/
 
- 
+
+function changeLanguage(lang) {
+    const content = {
+        fr: {
+            header1: "Ingénieure en Informatique",
+            header2: "& Experte en Développement Web et Création Visuelle",
+            btndownloader: "Télécharger CV",
+            nav1: "À propos",
+            // Coté portfolio :
+            description: "Diplômé BAC+3 en informatique, j’ai une expertise en développement web, maîtrise les méthodes agiles et les langages HTML, CSS, JavaScript, PHP, SQL, Python. Passionné par l’intelligence artificielle.",
+            contenu1: "Créativité",
+            contenu2: "Innovation",
+            contenu3: "Performance",
+            mininav1: "Galerie complète",
+            mininav2: "À explorer",
+            mininav3: "Sites web",
+            mininav4: "Design",
+            contactme: "Contactez-moi",
+            envoicontact: "Envoyer",
+            copyright: "Designé par",
+        },
+        en: {
+            header1: "Computer Engineer",
+            header2: "& Expert in Web Development and Visual Design",
+            btndownloader: "Download CV",
+            nav1: "About",
+            // Coté portfolio :
+            description: "Graduate with a Bachelor's degree in Computer Science, I have expertise in web development, mastering agile methodologies and languages such as HTML, CSS, JavaScript, PHP, SQL, Python. Passionate about artificial intelligence.",
+            contenu1: "Creativity",
+            contenu2: "Innovation",
+            contenu3: "Performance",
+            mininav1: "All Gallery",
+            mininav2: "To Explore",
+            mininav3: "Websites",
+            mininav4: "Design",
+            contactme: "Contact Me",
+            envoicontact: "Send",
+            copyright: "Designed by",
+        }
+    };
+
+    // Mettre à jour les éléments de la page principale
+    if (document.getElementById("header1")) {
+        document.getElementById("header1").innerText = content[lang].header1;
+    }
+    if (document.getElementById("header2")) {
+        document.getElementById("header2").innerText = content[lang].header2;
+    }
+    if (document.getElementById("btndownloader")) {
+        document.getElementById("btndownloader").innerText = content[lang].btndownloader;
+    }
+    if (document.getElementById("nav1")) {
+        document.getElementById("nav1").innerText = content[lang].nav1;
+    }
+
+    // Mettre à jour les éléments de la page portfolio
+    if (document.getElementById("description")) {
+        document.getElementById("description").innerText = content[lang].description;
+    }
+    if (document.getElementById("contenu1")) {
+        document.getElementById("contenu1").innerText = content[lang].contenu1;
+    }
+    if (document.getElementById("contenu2")) {
+        document.getElementById("contenu2").innerText = content[lang].contenu2;
+    }
+    if (document.getElementById("contenu3")) {
+        document.getElementById("contenu3").innerText = content[lang].contenu3;
+    }
+    if (document.getElementById("mininav1")) {
+        document.getElementById("mininav1").innerText = content[lang].mininav1;
+    }
+    if (document.getElementById("mininav2")) {
+        document.getElementById("mininav2").innerText = content[lang].mininav2;
+    }
+    if (document.getElementById("mininav3")) {
+        document.getElementById("mininav3").innerText = content[lang].mininav3;
+    }
+    if (document.getElementById("mininav4")) {
+        document.getElementById("mininav4").innerText = content[lang].mininav4;
+    }
+    if (document.getElementById("contactme")) {
+        document.getElementById("contactme").innerText = content[lang].contactme;
+    }
+    if (document.getElementById("envoicontact")) {
+        document.getElementById("envoicontact").innerText = content[lang].envoicontact;
+    }
+    if (document.getElementById("copyright")) {
+        document.getElementById("copyright").innerText = content[lang].copyright;
+    }
+
+    // Alterner les boutons
+    const frButton = document.querySelector('.fr');
+    const enButton = document.querySelector('.eng');
+
+    if (lang === 'fr') {
+        frButton.classList.add('active');
+        frButton.classList.remove('hidden');
+        enButton.classList.remove('active');
+        enButton.classList.add('hidden');
+    } else {
+        enButton.classList.add('active');
+        enButton.classList.remove('hidden');
+        frButton.classList.remove('active');
+        frButton.classList.add('hidden');
+    }
+
+    // Sauvegarder la langue choisie
+    localStorage.setItem('selectedLanguage', lang);
+}
+
+// Appliquer la langue sauvegardée au chargement de la page
+window.onload = function() {
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    changeLanguage(savedLanguage);
+};
+
+
 </script>
 </html>

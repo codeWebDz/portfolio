@@ -14,16 +14,18 @@
 <body>
     <section class="switchers switchportfolio">
         <div class="btnswitch">
-            <select class="langue langueportfolio">
-                <option >fr <img src="./images/icones/france.png" alt=""></option>
-             
-            </select>
+            <div class="langue langueportfolio">
+                <span class="language-btn fr active" onclick="changeLanguage('en')">fr</span>
+                <span class="language-btn eng hidden" onclick="changeLanguage('fr')">en</span>
+            </div>
             <label class="mode labelportfolio"> 
                 <input type="checkbox">
                 <img src="./images/icones/light-mode.png"  class="light" alt="">
                 <img src="./images/icones/dark-mode.png" class="dark" alt="">
             </label>
         </div>
+        <hr class="separator">
+        <span class="indicator"></span>
     </section>
     <section class="reflect">
         <video autoplay loop muted play-inline class="bg">
@@ -61,7 +63,7 @@
                     </div>
                     <div class="about" id="about" data-aos="fade-left">
                         <h2>Namane Meriem</h2>
-                        <p>Diplômé BAC+3 en informatique,
+                        <p id="description">Diplômé BAC+3 en informatique,
                              j’ai une expertise en développement web, 
                              maîtrise les méthodes agiles et les langages HTML,
                               CSS, JavaScript, PHP, SQL, Python. 
@@ -86,9 +88,9 @@
                 </div>
                 <div class="row2">
                     <div class="contenu">
-                        <h6 >creativity</h6>
-                        <h6 >Innovation</h6>
-                        <h6>Performance</h6>
+                        <h6 id="contenu1">creativity</h6>
+                        <h6 id="contenu2" >Innovation</h6>
+                        <h6 id="contenu3">Performance</h6>
                     </div>
                 </div>
            </div>
@@ -102,10 +104,10 @@
                     websites
                     design
                     -->
-                    <a  onclick="openDiv('allgallery')"  class="nav1" >all gallery</a>
-                    <a  onclick="openDiv('project')" class="nav2">À explorer</a>
-                    <a  onclick="openDiv('website')" class="nav3">websites</a>
-                    <a  onclick="openDiv('design')" class="nav4">design</a>
+                    <a  onclick="openDiv('allgallery')"  class="nav1" id="mininav1" >all gallery</a>
+                    <a  onclick="openDiv('project')" class="nav2" id="mininav2">À explorer</a>
+                    <a  onclick="openDiv('website')" class="nav3" id="mininav3">websites</a>
+                    <a  onclick="openDiv('design')" class="nav4" id="mininav4">design</a>
             </div>
             <div class="tab-gallery">  
                 <div class="gallery open" id="allgallery" >
@@ -267,15 +269,15 @@
             <div class="contact" id="contact" data-aos="fade-down">
                 <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
                     <div class="title">
-                        <h2>contact me</h2>
+                        <h2 id="contactme">contact me</h2>
                         <hr>
                     </div>
                     <input type="hidden" name="access_key" value="8e3f5969-1055-4a2f-8883-93141693d87f">
-                    <input type="text" name="name" placeholder="your name" class="contact-inputs" required> 
-                    <input type="email" name="email" placeholder="your email" class="contact-inputs" required> 
-                    <textarea  name="message" placeholder="message" class="contact-inputs" required> </textarea>
+                    <input type="text" name="name" id="name" placeholder="Nom" class="contact-inputs" required> 
+                    <input type="email" name="email" id="email" placeholder="Email" class="contact-inputs" required> 
+                    <textarea  name="message" id="message" placeholder="Message" class="contact-inputs" required> </textarea>
                     <div class="btn">
-                        <button>envoyer <img src="./images/icones/send-email.png" style="width: 20px;" alt=""> </button>
+                        <button id="envoicontact">envoyer <img src="./images/icones/send-email.png" style="width: 20px;" alt=""> </button>
                     </div>
                 </form>
 
@@ -294,7 +296,7 @@
             </div>   
             
             <div class="copyright">
-                <p> Designed by <a href="https://github.com/codeWebDz">CodeWebDz</a> |  &copy; 2024</p>
+                <p> <span id="copyright">Designed by</span> <a href="https://github.com/codeWebDz">CodeWebDz</a> |  &copy; 2024</p>
             </div>
         </section>
         </section>
@@ -380,7 +382,151 @@ modeSwitch.addEventListener('change', () => {
 });
 
 
- 
+ /*************** script for languege switchers *************/
+
+
+
+
+ function changeLanguage(lang) {
+    const content = {
+        fr: {
+            header1: "Ingénieure en Informatique",
+            header2: "& Experte en Développement Web et Création Visuelle",
+            btndownloader: "Télécharger CV",
+            nav1: "À propos",
+            // Coté portfolio :
+            description: "Diplômé BAC+3 en informatique, j’ai une expertise en développement web, maîtrise les méthodes agiles et les langages HTML, CSS, JavaScript, PHP, SQL, Python. Passionné par l’intelligence artificielle.",
+            contenu1: "Créativité",
+            contenu2: "Innovation",
+            contenu3: "Performance",
+            mininav1: "Galerie complète",
+            mininav2: "À explorer",
+            mininav3: "Sites web",
+            mininav4: "Design",
+            contactme: "Contactez-moi",
+            envoicontact: "Envoyer",
+            copyright: "Designé par",
+            placeholder_name: "Nom",
+            placeholder_email: "Email",
+        },
+        en: {
+            header1: "Computer Engineer",
+            header2: "& Expert in Web Development and Visual Design",
+            btndownloader: "Download CV",
+            nav1: "About",
+            // Coté portfolio :
+            description: "Graduate with a Bachelor's degree in Computer Science, I have expertise in web development, mastering agile methodologies and languages such as HTML, CSS, JavaScript, PHP, SQL, Python. Passionate about artificial intelligence.",
+            contenu1: "Creativity",
+            contenu2: "Innovation",
+            contenu3: "Performance",
+            mininav1: "All Gallery",
+            mininav2: "To Explore",
+            mininav3: "Websites",
+            mininav4: "Design",
+            contactme: "Contact Me",
+            envoicontact: "Send",
+            copyright: "Designed by",
+            // ajout des placeholder 
+            placeholder_name: "name",
+            placeholder_email: "email",
+
+        }
+    };
+
+    // Mettre à jour les éléments de la page principale
+    if (document.getElementById("header1")) {
+        document.getElementById("header1").innerText = content[lang].header1;
+    }
+    if (document.getElementById("header2")) {
+        document.getElementById("header2").innerText = content[lang].header2;
+    }
+    if (document.getElementById("btndownloader")) {
+        document.getElementById("btndownloader").innerText = content[lang].btndownloader;
+    }
+    if (document.getElementById("nav1")) {
+        document.getElementById("nav1").innerText = content[lang].nav1;
+    }
+
+    // Mettre à jour les éléments de la page portfolio
+    if (document.getElementById("description")) {
+        document.getElementById("description").innerText = content[lang].description;
+    }
+    if (document.getElementById("contenu1")) {
+        document.getElementById("contenu1").innerText = content[lang].contenu1;
+    }
+    if (document.getElementById("contenu2")) {
+        document.getElementById("contenu2").innerText = content[lang].contenu2;
+    }
+    if (document.getElementById("contenu3")) {
+        document.getElementById("contenu3").innerText = content[lang].contenu3;
+    }
+    if (document.getElementById("mininav1")) {
+        document.getElementById("mininav1").innerText = content[lang].mininav1;
+    }
+    if (document.getElementById("mininav2")) {
+        document.getElementById("mininav2").innerText = content[lang].mininav2;
+    }
+    if (document.getElementById("mininav3")) {
+        document.getElementById("mininav3").innerText = content[lang].mininav3;
+    }
+    if (document.getElementById("mininav4")) {
+        document.getElementById("mininav4").innerText = content[lang].mininav4;
+    }
+    if (document.getElementById("contactme")) {
+        document.getElementById("contactme").innerText = content[lang].contactme;
+    }
+    if (document.getElementById("envoicontact")) {
+        document.getElementById("envoicontact").innerText = content[lang].envoicontact;
+    }
+    if (document.getElementById("copyright")) {
+        document.getElementById("copyright").innerText = content[lang].copyright;
+    }
+
+
+     // Mettre à jour les placeholders des formulaires
+     if (document.getElementById("name")) {
+        document.getElementById("name").setAttribute("placeholder", content[lang].placeholder_name);
+    }
+    if (document.getElementById("email")) {
+        document.getElementById("email").setAttribute("placeholder", content[lang].placeholder_email);
+    }
+   
+
+
+    // Alterner les boutons
+    const frButton = document.querySelector('.fr');
+    const enButton = document.querySelector('.eng');
+
+    if (lang === 'fr') {
+        frButton.classList.add('active');
+        frButton.classList.remove('hidden');
+        enButton.classList.remove('active');
+        enButton.classList.add('hidden');
+    } else {
+        enButton.classList.add('active');
+        enButton.classList.remove('hidden');
+        frButton.classList.remove('active');
+        frButton.classList.add('hidden');
+    }
+
+    // Sauvegarder la langue choisie
+    localStorage.setItem('selectedLanguage', lang);
+}
+
+// Appliquer la langue sauvegardée au chargement de la page
+window.onload = function() {
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    changeLanguage(savedLanguage);
+};
+
+
+
+    // Ajoute l'effet de translation au clic sur l'indicateur
+    document.querySelector('.indicator').addEventListener('click', function() {
+        const btnSwitch = document.querySelector('.switchportfolio');
+        btnSwitch.classList.toggle('translated'); // Ajoute/enlève la classe 'translated'
+    });
+
    </script>
 
 </html>

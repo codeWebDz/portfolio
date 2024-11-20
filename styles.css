@@ -35,16 +35,18 @@ a{
     transform: rotate(90deg);
 }
 .switchportfolio{
-    right:85%;
+    right:0%;
     top: 50%;
     position: fixed;
     z-index: 200;
 }
 .btnswitch{
-    display: flex;
-    flex-direction: row;
+   
     column-gap: 10px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -14px;
 }
 label{
 
@@ -52,7 +54,6 @@ label{
    display: flex;
    justify-content:center ;
    align-items: center;
-   margin-top: -14px;
    cursor: pointer;
    background-color: #91909065;
    width:45px; 
@@ -97,12 +98,12 @@ input[type="checkbox"]:checked~ .dark{
     opacity:1;
     transform: rotate(265deg)  ;
 }
-.switchers:has(input[type="checkbox"]:checked) .langue {
-    color: #380138;
-
+.switchers:has(input[type="checkbox"]:checked) .btnswitch .langue .language-btn {
+    color: #260328a4;
 
 }
-
+/*.switchers .langue .language-btn{
+*/
 
 .switchers:has(input[type="checkbox"]:checked)~ .reflect video
 ,.switchers:has(input[type="checkbox"]:checked)~ .reflect .glass {
@@ -134,7 +135,7 @@ input[type="checkbox"]:checked~ .dark{
 
 }
 .switchers:has(input[type="checkbox"]:checked)~ .reflect .container .hero{
-    background: #8d8b8be7;
+    background: #9e9d9d4d;
     color: #141717;
 
 }
@@ -155,34 +156,43 @@ input[type="checkbox"]:checked~ .dark{
     filter: invert(1);
 
 }
-/*.mininav .nav1::before,.mininav .nav2::before, .mininav .nav3::before {
-    border-right: 1px solid #cacacaf6;
-}*/
-select{
+
+.langue {
     width: 45px;
     height: 45px;
     background: #b85cb8be;
-    color: #e2dfdf;
-    border:none;
     border-radius: 50px;
-    appearance: none;
-    outline: none;
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: rotate(-90deg);
-    margin-top: -13px;
+   
+}
+ 
+
+.fr, .eng {
+    position: absolute;
+    transition: opacity 0.3s, visibility 0.3s;
+    text-transform: capitalize;
     
 }
-option{
-    background-color: #d6101000; /* Option background */
-    color: #333; /* Text color */
-    border:none;
-    outline: none;
-   
 
+/* Masquer les boutons non actifs */
+.language-btn.hidden {
+    opacity: 0;
+    pointer-events: none;
 }
+
+.language-btn.active {
+    opacity: 1;
+}
+
+
+
+
+
 
 /*********  page d'acceuil | index page  *************/
 .reflect{
@@ -914,6 +924,7 @@ hr{
     
 }
 
+
 .footer{
     background-image: url(images/bgweb.png);
     background-size: cover;
@@ -947,6 +958,7 @@ hr{
     color:#cacaca ; 
 }
 
+/************ responsive mode ***************/
 @media (min-width : 1280px){
     .header{
         width: 150%;
@@ -1035,7 +1047,7 @@ hr{
         height: 35px;
     }
     
-    select,label{
+    .mode,.langue{
         width: 60px;
         height: 60px;
     }
@@ -1044,6 +1056,7 @@ hr{
         align-items: center;
         
     }
+  
 
 }
 
@@ -1068,9 +1081,52 @@ hr{
     .gallery{
         columns: 2;
     }
+  
+    .switchportfolio{
+        transform: rotate(90deg);
+        left:-105%;
+        
+        top: 50%;
+        position: fixed;
+        
+    }
+    .btnswitch{
+        background: #d1d2d1c3;
+        border-radius: 10px;
+        width: 120px;
+        height: 80px;
+        
+        transition: transform 0.3s ease; /* Animation fluide pour le mouvement */
+    }
     
+    .switchportfolio.translated{
+        transform:rotate(90deg) translateY(-59px); /* Déplace vers la gauche de 50px */
+    }
+    .indicator{
+        cursor: pointer;
+        
+        border-top: 1.7px solid #878787d6;
+        border-right: 1.7px solid #848282d6;
+        transform: rotate(-45deg);
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        top: -35%;
+    }
+    .separator{
+        position: absolute;
+        width: 100px;
+        background-color: #7d7c7c;
+        top: -66%;
+    }
+   
+ 
     
-    
+}
+@media (min-width:481px){
+    .switchportfolio{
+        left:-107%;
+    }
 }
 @media (max-width :560px){
     
@@ -1096,8 +1152,8 @@ hr{
     .contact .contact-left .btn button{
         left: 30%;
     }
+   
     
-     
     
 }
 @media (max-width :480px){
@@ -1169,31 +1225,11 @@ hr{
         position: relative;
      
      }
-     .switchers, .langue{
-        transform: rotate(0deg);  
+  
+     .switchportfolio{
+        left:-108%;
     }
-    .switchers{
-        width: 100%;
-        top:5%;
-        left: 0;
-    }
-    label{
-        transform: rotate(90deg);
-     }
-    .labelportfolio{
-        transform: rotate(0deg);
-    }
-    .langueportfolio {
-        transform: rotate(-90deg);  
-    }
-    .switchportfolio{
-        transform: rotate(90deg);
-        width: 50px;
-        right:85%;
-        top: 50%;
-        position: fixed;
-        z-index: 200;
-    }
+    
    
 }
 @media  (max-width: 400px) {
@@ -1213,6 +1249,6 @@ hr{
         left: 20%;  
 
     }
-   
+  
     
 }
