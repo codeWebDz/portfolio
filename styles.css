@@ -315,7 +315,7 @@ input[type="checkbox"]:checked~ .dark{
     font-weight: 500;
 }
 .btn{
-    width: 100%;
+    width: 100%; background-color: #02fc28;
 }
 .btn button {
     position: relative;
@@ -333,6 +333,9 @@ input[type="checkbox"]:checked~ .dark{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     text-transform: capitalize;
+}
+.btn .dwnportfolio{
+    width: 50%;
 }
 button a{
     text-decoration: none;
