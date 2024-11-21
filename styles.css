@@ -311,6 +311,9 @@ input[type="checkbox"]:checked~ .dark{
     font-size:  0.75em;
     font-weight: 500;
 }
+.btn{
+    width: 100%;
+}
 .btn button {
     position: relative;
     z-index: 2;
@@ -319,7 +322,7 @@ input[type="checkbox"]:checked~ .dark{
     color: #d8d6d7;  
     border: 0.9px solid #646464;
     height: 28px;
-    width: 100px;
+    width: 32%;
     transform: translateY(20px);
     cursor: pointer;
     overflow: hidden;
