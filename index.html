@@ -244,11 +244,7 @@ function changeLanguage(lang) {
     localStorage.setItem('selectedLanguage', lang);
 }
 
-// Appliquer la langue sauvegardée au chargement de la page
-window.onload = function() {
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
-    changeLanguage(savedLanguage);
-};
+
 
 
 </script>
