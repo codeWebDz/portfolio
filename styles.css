@@ -941,7 +941,7 @@ hr{
     background-image: url(images/bgweb.png);
     background-size: cover;
     width: 100%;
-    min-height: 30vh;
+    min-height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1281,6 +1281,9 @@ hr{
     .social{
         
         margin-top: 120px;
+    }
+    .socialbar{
+        margin-top:50px;
     }
     .portfolio{
         min-height: 360vh;
