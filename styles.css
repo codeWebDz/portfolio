@@ -315,7 +315,7 @@ input[type="checkbox"]:checked~ .dark{
     font-weight: 500;
 }
 .btn{
-    width: 100%; background-color: #02fc28;
+    width: 100%;
 }
 .btn button {
     position: relative;
