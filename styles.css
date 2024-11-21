@@ -146,8 +146,9 @@ input[type="checkbox"]:checked~ .dark{
 
 }
 
-.switchers:has(input[type="checkbox"]:checked)~ .reflect .container .mininav a{
-    color: #0e0e0e;
+.switchers:has(input[type="checkbox"]:checked)~ .reflect .container .mininav a
+,.switchers:has(input[type="checkbox"]:checked)~ .reflect .container .contact h2    {
+    color: #222222;
 
 }
 .switchers:has(input[type="checkbox"]:checked)~ .reflect .container .mininav .nav1::before
@@ -1278,17 +1279,15 @@ hr{
 @media  (max-width: 400px) {
     
     .social{
-        /*
+        
         margin-top: 120px;
-        */ 
-
     }
     .portfolio{
         min-height: 360vh;
     }
     
     .contact .contact-right img {
-        top: -430%;
+        top: -400%;
         left: 20%;  
 
     }
