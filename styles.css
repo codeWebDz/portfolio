@@ -1160,12 +1160,14 @@ hr{
         background-color: #8f8e8e;
         transform: rotate(90deg);
     } 
+ /*
     .switchers:has(input[type="checkbox"]:checked ) .btnswitch
     ,.switchers:has(input[type="checkbox"]:checked ) .btnswitch::after  {
         background: #2c2c2ce2;
     }
    
     
+ */
 }
 
 @media (max-width :560px){
