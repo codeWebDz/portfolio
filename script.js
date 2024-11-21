@@ -179,3 +179,12 @@ window.onload = function () {
     const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
     changeLanguage(savedLanguage);
 };
+
+/***** téléchargement du cv *********************/
+
+document.getElementById('btndownloader').addEventListener('click', function() {
+    const link = document.createElement('a');
+    link.href = 'NamaneMeriem-cv .pdf'; // Chemin vers le fichier
+    link.download = 'NamaneMeriem-cv .pdf'; // Nom du fichier
+    link.click();
+});
