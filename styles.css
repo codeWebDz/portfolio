@@ -135,11 +135,11 @@ input[type="checkbox"]:checked~ .dark{
 }
 /*light / dark mode for portfolio */
 .switchers:has(input[type="checkbox"]:checked)~ .reflect .container{
-    background: #c7c6c6e7;
+    background: #f2f0f0e7;
 
 }
 .switchers:has(input[type="checkbox"]:checked)~ .reflect .container .hero{
-    background: #9e9d9d4d;
+    background: #c5c4c44d;
     color: #141717;
 
 }
@@ -1102,7 +1102,7 @@ hr{
         cursor: pointer; 
         transition: 1s ease-in  ;
         overflow: hidden;
-        transform: translate(-88%);
+        transform: translate(-85%);
       
         
     }
@@ -1114,7 +1114,7 @@ hr{
         position: fixed;
     }  
     .btnswitch{
-        background: #484848b5;
+        background: #747373b5;
         height: 100%;
         width: 100%;
         border-top-right-radius: 10px;
