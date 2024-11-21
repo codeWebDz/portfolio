@@ -401,6 +401,7 @@ button:is(:hover)::before{
 }
 
 .social{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -501,11 +502,13 @@ ul .socialbar .box , .footer .box {
     height: 25px;
     width: 25px;
     border-radius: 20px;
+    
 }
 .socialbar .box img , .footer .box img{
    margin-top: 2px;
     height: 21px;
     width: 21px;
+    
 }
 /****************** page portfolio  *************************/
 
@@ -545,11 +548,9 @@ ul .socialbar .box , .footer .box {
      right: 10%;
 }
 .navPortfolio .menubarPortfolio img{
-    margin-top: 0px;
+    margin-top: 3px;
 }
-.navPortfolio .menubar {
-     display: bloc;
-    }
+
 .menubarPortfolio{
     border-radius: 10px;
     min-height: 60vh;
