@@ -342,6 +342,7 @@ button:is(:hover)::after{
     width: 120px;
     height: 58px;
     background: #8a2f76c5;
+
     display: flex;
     top:-60px;
     left:-1px;
@@ -1117,7 +1118,7 @@ hr{
         position: fixed;
     }  
     .btnswitch{
-        background: #8a2f7691;
+    background: #8a2f76c5;
         height: 100%;
         width: 100%;
         border-top-right-radius: 10px;
@@ -1131,7 +1132,7 @@ hr{
     }
     .btnswitch::after{
         content: '';
-        background: #8a2f7691;
+        background: #8a2f76c5;
         width: 6px;
         height: 60px;
         position: absolute;
