@@ -730,7 +730,7 @@ ul .socialbar .box , .footer .box {
 
 
 .mininav{
-    padding-top: 60px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
     height: 30px;
