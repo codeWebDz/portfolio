@@ -1104,11 +1104,11 @@ hr{
         top: 30%; 
         cursor: pointer; 
         transition: 1s ease-in  ;
-        overflow: hidden;
-        transform: translate(-85%);
+        transform: translate(-84%);
       
         
     }
+    
     .switchers:hover{ 
         transform: translate(0%);
     
@@ -1117,7 +1117,7 @@ hr{
         position: fixed;
     }  
     .btnswitch{
-        background: #747373b5;
+        background: #1a1919b5;
         height: 100%;
         width: 100%;
         border-top-right-radius: 10px;
@@ -1127,18 +1127,29 @@ hr{
        justify-content: center;
        padding-left: 10px;
        row-gap: 10px;
-       
-      
+
+    }
+    .btnswitch::after{
+        content: '';
+        background: #1a1919b5;
+        width: 6px;
+        height: 60px;
+        position: absolute;
+        z-index: -2;
+        transform: translateX(1081%);
+        border-top-right-radius:50px;
+        border-bottom-right-radius: 50px;
+
     }
     .indicator{
         cursor: pointer;
         position: absolute;
-        border-top: 1.7px solid #878787d6;
-        border-right: 1.7px solid #848282d6;
+        border-top: 1.7px solid #8f8e8e;
+        border-right: 1.7px solid #8f8e8e;
         transform: rotate(45deg);
-        width: 4px;
-        height: 4px;
-        right: 5%;
+        width: 5px;
+        height: 5px;
+        right: 0%;
         
     }
     .separator{
@@ -1146,11 +1157,12 @@ hr{
         width: 120px;
         position: absolute;
         right: -68%;
-        background-color: #7d7c7c;
+        background-color: #8f8e8e;
         transform: rotate(90deg);
     } 
-    .switchers:has(input[type="checkbox"]:checked ) .btnswitch{
-        background: #a8a7a786;
+    .switchers:has(input[type="checkbox"]:checked ) .btnswitch
+    ,.switchers:has(input[type="checkbox"]:checked ) .btnswitch::after  {
+        background: #2c2c2ce2;
     }
    
     
