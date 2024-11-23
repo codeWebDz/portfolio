@@ -735,9 +735,10 @@ ul .socialbar .box , .footer .box {
     height: 20px;
 }
 /******** portfolio **********/
-
+.portfolio{
+    min-height: 80vh;
+}
 /**** portfolio > mini navbar****/
-
 
 
 .mininav{
@@ -837,9 +838,8 @@ ul .socialbar .box , .footer .box {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border-radius: 10px;
-
-
+    border-radius: 10px; 
+    transition: 5s ease;
 }
 
 .gallery .box:hover::before{
@@ -979,9 +979,7 @@ hr{
         width: 150%;
         height: 50%;
     }
-    .portfolio{
-        min-height: 100vh;
-       }
+    
 }
 
 @media (min-width : 780px){
@@ -1048,9 +1046,8 @@ hr{
     .skills .row1 ,.skills .row2 .contenu {
         column-gap: 80px;
     }
-    .portfolio{
-        min-height: 150vh;
-       }
+    
+    
     .contact .contact-right img{
         width:420px;
         height: 420px;   
@@ -1075,6 +1072,9 @@ hr{
         width: 60px;
         height: 60px;
     }
+    .portfolio{
+        min-height:105vh;
+    }
 }
 
 @media (max-width : 1200px){
@@ -1092,9 +1092,7 @@ hr{
 }
 
 @media (max-width :768px){
-    .portfolio{
-        min-height: 210vh;
-       }
+    
     .gallery{
         columns: 2;
     }
@@ -1173,7 +1171,9 @@ hr{
     ,.switchers:has(input[type="checkbox"]:checked ) .btnswitch::after  {
         background: #2c2c2ce2;
     }
-   
+    .portfolio{
+        min-height: 140vh;
+    }
     
  
 }
@@ -1256,7 +1256,8 @@ hr{
       left: 38%;
     }
     .portfolio{
-        min-height: 590vh; 
+        min-height: 370vh;
+    
     }
     .gallery{
         columns: 1;
@@ -1288,8 +1289,10 @@ hr{
     .socialbar{
         margin-top:50px;
     }
+   
     .portfolio{
-        min-height: 360vh;
+        min-height: 310vh;
+    
     }
     
     .contact .contact-right img {
