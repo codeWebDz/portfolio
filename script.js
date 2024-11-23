@@ -83,7 +83,8 @@ function changeLanguage(lang) {
             header1: "Ingénieure en Informatique",
             header2: "& Experte en Développement Web et Création Visuelle",
             btndownloader: "Télécharger CV",
-            nav1: "À propos",
+            link1: "À propos",
+            link4:"Acceuil",
             description: "Diplômé BAC+3 en informatique, j’ai une expertise en développement web, maîtrise les méthodes agiles et les langages HTML, CSS, JavaScript, PHP, SQL, Python. Passionné par l’intelligence artificielle.",
             contenu1: "Créativité",
             contenu2: "Innovation",
@@ -102,7 +103,8 @@ function changeLanguage(lang) {
             header1: "Computer Engineer",
             header2: "& Expert in Web Development and Visual Design",
             btndownloader: "Download CV",
-            nav1: "About",
+            link1: "About",
+            link4:"Home",
             description: "Graduate with a Bachelor's degree in Computer Science, I have expertise in web development, mastering agile methodologies and languages such as HTML, CSS, JavaScript, PHP, SQL, Python. Passionate about artificial intelligence.",
             contenu1: "Creativity",
             contenu2: "Innovation",
@@ -128,8 +130,11 @@ function changeLanguage(lang) {
     if (document.getElementById("btndownloader")) {
         document.getElementById("btndownloader").innerText = content[lang].btndownloader;
     }
-    if (document.getElementById("nav1")) {
-        document.getElementById("nav1").innerText = content[lang].nav1;
+    if (document.getElementById("link1")) {
+        document.getElementById("link1").innerText = content[lang].link1;
+    }
+    if (document.getElementById("link4")) {
+        document.getElementById("link4").innerText = content[lang].link4;
     }
 
     if (document.getElementById("description")) {

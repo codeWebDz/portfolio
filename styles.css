@@ -438,7 +438,7 @@ button:is(:hover)::before{
     margin: auto ;
     position: absolute;
     left:20%;
-    top:25% ;
+    top:30% ;
     z-index: 2;
 }
 
@@ -485,7 +485,6 @@ button:is(:hover)::before{
 .menubar img{
     
     position:inherit;
-    
 }
 
 ul{
@@ -512,18 +511,19 @@ ul li img#close{
     top:25px;
     
 }
-ul .socialbar .box , .footer .box {
-    height: 25px;
-    width: 25px;
-    border-radius: 20px;
-    
-}
+
 .socialbar .box img , .footer .box img{
-   margin-top: 2px;
+    position: absolute;
+    top: 0;
+    left: 10%;
     height: 21px;
     width: 21px;
     
 }
+.footer .box img,.menubar .box img  {
+    top: 10%;
+}
+
 /****************** page portfolio  *************************/
 
 .container{
@@ -1013,7 +1013,7 @@ hr{
         transform: scale(1.2);
         
     }
-    ul .socialbar .box{
+   .socialbar .box{
         width: 35px;
         height: 35px;
         transform: translateY(-40px);
@@ -1212,7 +1212,10 @@ hr{
         left: 30%;
     }
    
-    
+    .social , .socialbar{
+        transform: scale(0.8);
+        margin-top: 40px;
+    }
     
 }
 @media (max-width :480px){
@@ -1297,7 +1300,7 @@ hr{
     }
    
     .portfolio{
-        min-height: 310vh;
+        min-height: 410vh;
     
     }
     
