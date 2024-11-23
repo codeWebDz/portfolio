@@ -736,13 +736,14 @@ ul .socialbar .box , .footer .box {
 }
 /******** portfolio **********/
 .portfolio{
-    min-height: 80vh;
+    min-height: 80vh;   
+
 }
 /**** portfolio > mini navbar****/
 
 
 .mininav{
-    margin-top: 30px;
+    margin-top: 70px;
     display: flex;
     justify-content: space-evenly;
     height: 30px;
