@@ -1106,6 +1106,7 @@ hr{
         align-items: center;
         width:75px;
         height: 30vh;
+        min-height: 30vh;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         position: absolute;
@@ -1114,7 +1115,7 @@ hr{
         top: 30%; 
         cursor: pointer; 
         transition: 1s ease-in  ;
-        transform: translate(-84%);
+        transform: translate(-79%);
       
         
     }
@@ -1167,7 +1168,7 @@ hr{
         width: 120px;
         position: absolute;
         right: -68%;
-        background-color: #8f8e8e;
+        background-color: #8f8e8e74;
         transform: rotate(90deg);
     } 
  
