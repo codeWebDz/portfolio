@@ -2,6 +2,10 @@
 
 const menuToggle = document.getElementById("menu-toggle");
 const menuClose = document.getElementById("close");
+const link1 = document.getElementById("link1");
+const link2 = document.getElementById("link2");
+const link3 = document.getElementById("link3");
+
 const menubar = document.getElementsByClassName("menubar")[0];
 
 // Ouverture du menu
@@ -11,12 +15,19 @@ menuToggle.addEventListener("click", function () {
     menuClose.style.display = "inline-block"; // Affiche le bouton Close
 });
 
-// Fermeture du menu
-menuClose.addEventListener("click", function () {
+
+// Fermeture du menu en cliquant sur un lien ou sur button close
+function closeMenu() {
     menubar.classList.remove("active"); // Cache le menu
     menuToggle.style.display = "inline-block"; // Affiche le bouton Menu
     menuClose.style.display = "none"; // Cache le bouton Close
-});
+}
+
+link1.addEventListener("click", closeMenu); // Fermeture au clic sur link1
+link2.addEventListener("click", closeMenu); // Fermeture au clic sur link2
+link3.addEventListener("click", closeMenu); // Fermeture au clic sur link2
+
+menuClose.addEventListener("click", closeMenu); //Fermeture au clic sur close button
 
 /******** script of tab gallery *************/
 
