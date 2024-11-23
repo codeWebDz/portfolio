@@ -737,13 +737,15 @@ ul .socialbar .box , .footer .box {
 /******** portfolio **********/
 .portfolio{
     min-height: 80vh;   
+    padding-top: 12vh;
+   
 
 }
 /**** portfolio > mini navbar****/
 
 
 .mininav{
-    margin-top: 70px;
+    
     display: flex;
     justify-content: space-evenly;
     height: 30px;
@@ -880,6 +882,7 @@ ul .socialbar .box , .footer .box {
     justify-content: space-around;
     overflow: hidden;
     margin: 0px ;
+    padding-top: 12vh;
 
 }
 .contact .contact-left{

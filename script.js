@@ -15,8 +15,14 @@ menuToggle.addEventListener("click", function () {
     menuClose.style.display = "inline-block"; // Affiche le bouton Close
 });
 
+// Fermeture du menu
+menuClose.addEventListener("click", function () {
+    menubar.classList.remove("active"); // Cache le menu
+    menuToggle.style.display = "inline-block"; // Affiche le bouton Menu
+    menuClose.style.display = "none"; // Cache le bouton Close
+});
 
-// Fermeture du menu en cliquant sur un lien ou sur button close
+// Fermeture du menu en cliquant sur un lien
 function closeMenu() {
     menubar.classList.remove("active"); // Cache le menu
     menuToggle.style.display = "inline-block"; // Affiche le bouton Menu
@@ -27,7 +33,6 @@ link1.addEventListener("click", closeMenu); // Fermeture au clic sur link1
 link2.addEventListener("click", closeMenu); // Fermeture au clic sur link2
 link3.addEventListener("click", closeMenu); // Fermeture au clic sur link2
 
-menuClose.addEventListener("click", closeMenu); //Fermeture au clic sur close button
 
 /******** script of tab gallery *************/
 
