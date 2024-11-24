@@ -1301,7 +1301,7 @@ hr{
 }
 @media  (max-width: 400px) {
     .portfolio{
-        min-height: 340vh;
+        min-height: 310vh;
         background-color: #02fc2882;
      }
     .socialbar{
