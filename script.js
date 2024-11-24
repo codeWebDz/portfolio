@@ -75,6 +75,7 @@ modeSwitch.addEventListener('change', () => {
     }
 });
 
+
 /*************** script for language switchers *************/
 
 function changeLanguage(lang) {
