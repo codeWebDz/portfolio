@@ -1306,20 +1306,19 @@ hr{
     .socialbar{
         margin-top:50px;
     }
-   .contact .contact-right img {
-        top: -400%;
-        left: 20%;  
-
-    }
+  /* .contact .contact-right img {
+        top: -450%;
+        left: 10%;  
+    }*/
 }
 
-/*@media  (max-width: 400px) and  (min-height:640px) {
+@media (min-height:640px) {
     .portfolio{
-        min-height: 390vh;
-        
+        min-height: 350vh;
+        background-color: #02fc28;
      }
     }
-@media  (max-width: 400px) and  (max-height:640px) {
+/*@media  (max-width: 400px) and  (max-height:640px) {
         .portfolio{
             min-height: 390vh;
             
