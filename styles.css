@@ -1121,6 +1121,8 @@ hr{
         width:75px;
         height: 30vh;
         min-height: 30vh;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
         position: absolute;
         z-index: 1;
         left:0%;
@@ -1128,7 +1130,7 @@ hr{
         cursor: pointer; 
         transition: 1s ease-in  ;
         transform: translate(-75%);
-      
+    
         
     }
     
