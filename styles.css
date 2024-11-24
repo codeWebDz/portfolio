@@ -940,7 +940,7 @@ hr{
 }
 .contact .contact-right {
     width: 40%;
-    position: relative;
+    position: absolute;
     
 }
 .contact .contact-right img{
