@@ -894,6 +894,7 @@ ul li img#close{
     overflow: hidden;
    /* margin: 0px ;*/ 
     padding-top: 12vh;
+    position: relative;
    
     
 
@@ -940,8 +941,7 @@ hr{
 }
 .contact .contact-right {
     width: 40%;
-    position: absolute;
-    
+    /*    position: relative; */
 }
 .contact .contact-right img{
     width:500px;
@@ -951,7 +951,7 @@ hr{
     margin-top: 50px;
     margin-right: -250px;  
     transform: scalex(-1);
-    position: absolute;
+  /*  position: absolute;*/ 
     background-color: #243cda93;
     
     
