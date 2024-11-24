@@ -1315,7 +1315,6 @@ hr{
 @media (min-height:640px) {
     .portfolio{
         min-height: 350vh;
-        background-color: #02fc28;
      }
     }
 /*@media  (max-width: 400px) and  (max-height:640px) {
