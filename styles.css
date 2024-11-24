@@ -120,7 +120,7 @@ input[type="checkbox"]:checked~ .dark{
      filter: inherit;
     color: #282e2e;
 }
-.switchers:has(input[type="checkbox"]:checked)~ .reflect .glass .btn {    
+.switchers:has(input[type="checkbox"]:checked)~ .reflect .glass .header.btn {    
     filter: inherit;    
     color: #282e2e;
 
@@ -1211,11 +1211,7 @@ hr{
     .contact .contact-left .btn button{
         left: 30%;
     }
-   
-    .social , .socialbar{
-        transform: scale(0.8);
-        margin-top: 40px;
-    }
+  
     
 }
 @media (max-width :480px){
