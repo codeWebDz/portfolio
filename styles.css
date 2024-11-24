@@ -1302,7 +1302,7 @@ hr{
 @media  (max-width: 400px) {
     .portfolio{
         min-height: 340vh;
-        
+        background-color: #02fc2882;
      }
     .socialbar{
         margin-top:50px;
