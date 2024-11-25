@@ -749,7 +749,7 @@ ul li img#close{
 /******** portfolio **********/
 .portfolio{
    /* min-height: 80vh;   */
-    height: 80vh;
+   height: 80vh;
     padding-top: 12vh;
    
 }
@@ -1322,7 +1322,7 @@ hr{
     }
 }
 
-@media (max-height :700px)
+@media (max-width: 400px)  and (max-height :700px)
 {   .contact{
     min-height: 80vh;
 }
@@ -1333,7 +1333,7 @@ hr{
        margin-top: -10px;
     }
 }
-@media (max-height :640px)
+@media (max-width: 400px)  and (max-height :640px)
 {   .contact{
     min-height: 80vh;
 }
@@ -1345,7 +1345,7 @@ hr{
     }
 }
 
-@media (max-height :600px)
+@media (max-width: 400px)  and (max-height :600px)
 {   .contact{
     min-height: 80vh;
 }
@@ -1356,7 +1356,7 @@ hr{
        margin-top: -10px;
     }
 }
-@media (max-height :580px)
+@media (max-width: 400px)  and (max-height :580px)
 {   .contact{
     min-height: 92vh;
 }
@@ -1367,7 +1367,7 @@ hr{
        margin-top: -20px;
     }
 }
-@media (max-height :540px)
+@media (max-width: 400px)  and (max-height :540px)
 {   .contact{
     min-height: 92vh;
 }
@@ -1378,7 +1378,7 @@ hr{
        margin-top: -20px;
     }
 }
-@media (max-height :400px)
+@media (max-width: 400px)  and (max-height :400px)
 {   .contact{
     min-height: 92vh;
 }
@@ -1389,7 +1389,7 @@ hr{
        margin-top: -20px;
     }
 }
-@media (max-height :380px)
+@media (max-width: 400px)  and (max-height :380px)
 {   .contact{
     min-height: 92vh;
 }
