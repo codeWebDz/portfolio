@@ -885,27 +885,20 @@ ul li img#close{
 
 /*************** contact form ***************/
 .contact{
-    width: 100%;
-    height: 70vh;
-    min-height: 70vh;
-    display: flex;
-    /*flex-wrap: wrap;*/
-    justify-content: space-around;
-    overflow: hidden;
-   /* margin: 0px ;*/ 
     padding-top: 12vh;
-    position: relative;
-   
-    
-
+    display: flex;
+    width: 100%;
+    height: 65vh ;
+   position: relative;
+   overflow: hidden;
 }
-.contact .contact-left{
-    min-width: 60%;
+.contact-left{     /* form */
+    width: 60%;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
-    padding-top:80px;
-    z-index: 2;
-
+    z-index: 1;
+    
 }
 .contact .contact-left h2{
     text-align: center;
@@ -920,7 +913,7 @@ hr{
     height: 1px;
 }
 .contact .contact-left .contact-inputs{
-    margin-left: 8%;
+    margin-left: 5%;
     padding: 10px;
     border-radius: 10px;
     outline-offset: 0px;
@@ -931,32 +924,38 @@ hr{
 .contact .contact-left textarea{
     min-height: 80px;
 }
-.contact .contact-left .btn button{
+.btncontact{
+    height:60px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    top: 30%;
-    left: 40%; 
-    
+    justify-content: center;
 }
-.contact .contact-right {
+.contact-right{
     width: 40%;
-    /*    position: relative; */
+    
 }
-.contact .contact-right img{
-    width:500px;
-    height:500px;
-    border-radius: 50%;
-    rotate: -45deg;
-    margin-top: 50px;
-    margin-right: -250px;  
-    transform: scalex(-1);
-  /*  position: absolute;*/ 
+.div-box{
+    width: 180%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    right:80%;
+    overflow: hidden;
+    z-index: 0;
+
+}
+.contact-right img{
+    width: 500px;
+    height: 500px;
     background-color: #243cda93;
-    
-    
+    transform: rotate(-45deg) scaleX(-1);
+    border-radius: 500px;
+    position: relative; 
+    right: -60%;
+    top:-20%;
 }
 
+
+/*************** footer ***************/
 
 .footer{
     background-image: url(images/bgweb.png);
@@ -994,13 +993,7 @@ hr{
 }
 
 /************ responsive mode ***************/
-@media (min-width : 1280px){
-    .header{
-        width: 150%;
-        height: 50%;
-    }
-    
-}
+
 
 @media (min-width : 780px) {
    
@@ -1019,17 +1012,6 @@ hr{
         transform: scale(1.2);
         
     }
- /*  .socialbar .box{
-        width: 35px;
-        height: 35px;
-        transform: translateY(-40px);
-
-    }
-    .menubarPortfolio .socialbar .box img{
-        margin-top:5px;
-        margin-left: 5px;
-    }*/ 
-    
     .btn button {
         height: 35px;
         width: 120px;
@@ -1037,12 +1019,6 @@ hr{
         margin-right: 10px;
     }
     
-    /* .social img , .socialbar .box img ,  .footer .box img{
-         width: 25px;
-         height: 25px;
-         left:8%;   
-
-     }*/
 
      .circle{
         width: 290px;
@@ -1066,17 +1042,23 @@ hr{
         min-height: 110vh;
     }
     
-    .contact .contact-right img{
-        width:420px;
-        height: 420px;   
-        right:14%;
-        top:-15%;
+    .contact-right img{
+       
+        right: -40%;
+        
     }
+   
    
     .footer .box {
         width: 35px;
         height: 35px;
+        
     }
+    .footer .box img{
+        top: 20%;
+        left: 20%;
+    }
+    
     
     .mode,.langue{
         width: 50px;
@@ -1085,6 +1067,7 @@ hr{
 
  
 }
+
 @media (min-width: 900px){
     .mode,.langue{
         width: 60px;
@@ -1093,20 +1076,43 @@ hr{
     .portfolio{
         min-height:120vh;
     }
+    .contact-right img{
+       width: 550px;
+       height: 550px;
+        right: -50%;
+       
+    }
+   
+   
 }
+@media (min-width : 1280px){
+    .header{
+        width: 150%;
+        height: 50%;
+    }
+    .contact-right img{
+       
+        right: -60%;
+        
+    }
+   
 
+}
 @media (max-width : 1200px){
     
        .gallery{
             columns: 3;
         }
-       
-        .contact .contact-right img{
-            width:420px;
-            height: 420px;   
-            right:15%;
+        .portfolio{
+            min-height: 150vh;
         }
-        
+        .contact-right img{
+       
+            right: -60%;
+         
+        }
+       
+    
 }
 
 @media (max-width :768px){
@@ -1191,9 +1197,14 @@ hr{
         background: #2c2c2ce2;
     }
     .portfolio{
-        min-height: 210vh;
+        min-height: 190vh;
     }
-    
+    .contact-right img{
+       
+        right: -40%;
+        top:-20%;
+    }
+   
  
 }
 
@@ -1218,9 +1229,7 @@ hr{
     width: 100%;
    }
    
-    .contact .contact-left .btn button{
-        left: 30%;
-    }
+  
   
     
 }
@@ -1284,44 +1293,25 @@ hr{
     .mininav a{
         font-size: 13px;
     }
-    .contact .contact-right img {
-        top:-20%;
-        left: -20%;
+    .contact-right img{
+        width: 400px;
+        height: 400px;
+        right: -40%;
     }
-  
-    .contact { 
-        height: 90vh;
-        margin: -26px auto;
-        position: relative;
-     
-     }
- 
-   
-  
 }
 @media  (max-width: 400px) {
     .portfolio{
-        min-height: 310vh;
+        min-height: 410vh;
      }
     .socialbar{
         margin-top:50px;
     }
-  /* .contact .contact-right img {
-        top: -450%;
-        left: 10%;  
-    }*/
+   
+    .contact-right img{
+        
+        right: -25%;
+        top:-20%;
+    }
 }
 
-@media (min-height:640px) {
-    .portfolio{
-        min-height: 350vh;
-     }
-    }
-/*@media  (max-width: 400px) and  (max-height:640px) {
-        .portfolio{
-            min-height: 390vh;
-            
-         }
-        }
- */  
 
