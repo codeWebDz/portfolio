@@ -1304,7 +1304,7 @@ hr{
 
 @media  (max-width: 400px) {
     .portfolio{
-        min-height: 350vh;
+        min-height: 320vh;
      }
     .socialbar{
         margin-top:50px;
@@ -1317,7 +1317,17 @@ hr{
     }
 }
 
-
+@media (max-height :640px)
+{   .contact{
+    min-height: 80vh;
+}
+    .portfolio{
+        min-height: 390vh;
+    }
+    .footer .box{
+       margin-top: -10px;
+    }
+}
 
 @media (max-height :600px)
 {   .contact{
