@@ -924,7 +924,7 @@ hr{
     outline-offset: 0px;
     outline-color: #4002fc;
     margin-top: 5px;
-    border: none;
+    border: 1px solid #90909180;
 }
 .contact .contact-left textarea{
     min-height: 80px;
