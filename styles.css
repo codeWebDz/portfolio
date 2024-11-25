@@ -1301,6 +1301,7 @@ hr{
         right: -40%;
     }
 }
+
 @media  (max-width: 400px) {
     .portfolio{
         min-height: 390vh;
@@ -1318,18 +1319,51 @@ hr{
 
 
 
-@media (max-height :590px)
+@media (max-height :600px)
 {   .contact{
     min-height: 80vh;
 }
     .portfolio{
-        min-height: 500vh;
+        min-height: 420vh;
     }
     .footer .box{
        margin-top: -10px;
     }
 }
+@media (max-height :580px)
+{   .contact{
+    min-height: 92vh;
+}
+    .portfolio{
+        min-height: 450vh;
+    }
+    .footer .box{
+       margin-top: -20px;
+    }
+}
+@media (max-height :540px)
+{   .contact{
+    min-height: 92vh;
+}
+    .portfolio{
+        min-height: 480vh;
+    }
+    .footer .box{
+       margin-top: -20px;
+    }
+}
 @media (max-height :400px)
+{   .contact{
+    min-height: 92vh;
+}
+    .portfolio{
+        min-height: 630vh;
+    }
+    .footer .box{
+       margin-top: -20px;
+    }
+}
+@media (max-height :380px)
 {   .contact{
     min-height: 92vh;
 }
