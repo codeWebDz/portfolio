@@ -525,7 +525,9 @@ ul li img#close{
 }
 
 /****************** page portfolio  *************************/
-
+.pre-container{
+    position: relative;
+}
 .container{
     position: absolute;
     top: -13%;
@@ -1301,7 +1303,7 @@ hr{
 }
 @media  (max-width: 400px) {
     .portfolio{
-        min-height: 410vh;
+        min-height: 390vh;
      }
     .socialbar{
         margin-top:50px;
@@ -1315,3 +1317,26 @@ hr{
 }
 
 
+
+@media (max-height :590px)
+{   .contact{
+    min-height: 80vh;
+}
+    .portfolio{
+        min-height: 500vh;
+    }
+    .footer .box{
+       margin-top: -10px;
+    }
+}
+@media (max-height :400px)
+{   .contact{
+    min-height: 92vh;
+}
+    .portfolio{
+        min-height: 680vh;
+    }
+    .footer .box{
+       margin-top: -20px;
+    }
+}
